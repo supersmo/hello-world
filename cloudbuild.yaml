@@ -1,4 +1,7 @@
 steps:
+- name: 'gcr.io/cloud-builders/git'
+  args: ['clone', 'https://github.com/supersmo/hello-world.git']
+  env: ['PROJECT_ROOT=.']
 - name: 'gcr.io/cloud-builders/dotnet'
   args: ['build', 'HelloWorld.sln ']
   env: ['PROJECT_ROOT=.']
