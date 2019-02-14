@@ -5,4 +5,3 @@ steps:
 - name: 'gcr.io/cloud-builders/dotnet'
   args: ['build', 'HelloWorld.sln ']
   env: ['PROJECT_ROOT=.']
-
