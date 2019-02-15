@@ -1,9 +1,9 @@
 steps:
 - name: 'ubuntu'
-  args: ['bash', '/bin/ls']
+  args: ['ls', '-a -l']
 - name: 'gcr.io/cloud-builders/git'
   args: ['clone', 'https://github.com/supersmo/hello-world.git']
 - name: 'ubuntu'
-  args: ['bash', '/bin/ls']
+  args: ['ls', '-a -l']
 - name: 'gcr.io/cloud-builders/dotnet'
   args: ['build', './hello-world/HelloWorld.sln ']
